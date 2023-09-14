@@ -9,7 +9,29 @@ import SwiftUI
 
 struct WordView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            ScrollView {
+                
+            }
+            
+            FavoriteButton
+        }
+    }
+    
+    private var FavoriteButton: some View {
+        VStack {
+            HStack {
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "heart")
+                }
+                .buttonStyle(.plain)
+            }
+            Spacer()
+        }
     }
 }
 
